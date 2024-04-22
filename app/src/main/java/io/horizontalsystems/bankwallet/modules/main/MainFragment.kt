@@ -207,6 +207,7 @@ private fun MainScreen(
                         when (uiState.mainNavItems[page].mainNavItem) {
                             MainNavigation.Market -> MarketScreen(fragmentNavController)
                             MainNavigation.Balance -> BalanceScreen(fragmentNavController)
+                            MainNavigation.Swap -> SwapScreen(fragmentNavController, null, true)
                             MainNavigation.Transactions -> TransactionsScreen(
                                 fragmentNavController,
                                 transactionsViewModel
